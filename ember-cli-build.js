@@ -3,13 +3,20 @@
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
+  var bootstrapPath = 'bower_components/bootstrap-sass/assets/';
+
   let app = new EmberApp(defaults, {
-    // Add options here
+    sassOptions: {
+      includePaths: [
+        bootstrapPath + 'stylesheets'
+      ]
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
-  //
+  app.import(bootstrapPath + 'javascripts/bootstrap.js');
+  // app.import('bower_components/moment/moment.js');
   // If you need to use different assets in different
   // environments, specify an object as the first parameter. That
   // object's keys should be the environment name and the values
