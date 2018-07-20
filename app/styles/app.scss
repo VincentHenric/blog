@@ -25,3 +25,14 @@ body {
 .section {
   margin-bottom: 40px;
 }
+
+.article {
+  background-color: white;
+  border-style: groove;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.article h5 { //for dates in articles
+  margin-bottom: 30px;
+}
