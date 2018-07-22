@@ -17,6 +17,8 @@ export default Route.extend({
       createdAt: new Date('2018-07-20'),
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac justo neque. Nulla eu euismod nisl. Maecenas vestibulum a arcu ac pharetra. Proin sollicitudin augue quis laoreet semper. Pellentesque in lacus non eros condimentum feugiat. Integer sodales consequat justo, eu sodales orci lacinia nec. Quisque ipsum dolor, viverra eget viverra at, cursus vitae est. Etiam accumsan augue vitae tortor sagittis, at volutpat eros ultrices. Donec pretium massa ut finibus ultrices. Vestibulum mattis arcu sed urna mattis, et auctor elit finibus. Nunc malesuada, diam at ultricies fermentum, justo eros aliquet leo, eget accumsan risus lorem non lacus. Morbi dictum, ipsum id rhoncus porta, elit ante sodales ex, eu tempus nunc diam quis tellus. Curabitur est nunc, malesuada eu eros non, dignissim malesuada est. Donec sollicitudin eget risus quis fringilla. Proin sit amet velit elementum, porta leo sit amet, sodales velit. Quisque aliquet efficitur tortor id lobortis.'
     })
+    //console.log(this.store.findAll('article'));
     return [article1, article2, article3];
+    //return this.store.findAll('cryptid');
   }
 });

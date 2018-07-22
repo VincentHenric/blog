@@ -1,16 +1,11 @@
 <div class="row">
-  <h1>Articles</h1>
-
-  {{#each model as |article|}}
-    <div class="article">
-      <h2>{{article.title}}</h2>
-      <div class="metadata">
-        <h5 class = "alignleft">{{date-format article.createdAt}}</h5>
-        <h5 class = "alignright">Written by {{article.author}}</h5>
-      </div>
-      <p style="clear: both;">{{article.text}}</p>
-    </div>
-  {{/each}}
-
-
+  <div class="col-xs-6">
+    <h1>Articles</h1>
+  </div>
+  <div class="col-xs-6 h1">
+    {{#link-to "articles.new" class="pull-right btn btn-primary"}}
+    New Article
+    {{/link-to}}
+  </div>
 </div>
+{{outlet}}

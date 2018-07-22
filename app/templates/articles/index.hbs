@@ -1,0 +1,12 @@
+<div class="row">
+  {{#each model as |article|}}
+    <div class="article">
+      <h2>{{article.title}}</h2>
+      <div class="metadata">
+        <h5 class = "alignleft">{{date-format article.createdAt}}</h5>
+        <h5 class = "alignright">Written by {{article.author}}</h5>
+      </div>
+      <p style="clear: both;">{{article.text}}</p>
+    </div>
+  {{/each}}
+</div>
